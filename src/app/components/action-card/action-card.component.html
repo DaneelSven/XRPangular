@@ -1,0 +1,11 @@
+<div class="action-card" [ngClass]="{'clickable' : this.clickable }" [routerLink]="navigation"
+  routerLinkActive="active">
+  <div class="media-center">
+    <div class="icon-row">
+      <img class="action-card-icon" [src]="icon" [alt]="title">
+    </div>
+    <div class="text-row">
+      <p style="padding-top: 30px;" class="action-card-text">{{title}}</p>
+    </div>
+  </div>
+</div>

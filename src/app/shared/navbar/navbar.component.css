@@ -1,0 +1,16 @@
+.xrpNavbar {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid orange;
+    background-color:  #303030;
+
+}
+
+.navbarItem {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}

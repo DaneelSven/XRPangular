@@ -1,0 +1,9 @@
+.accounts {
+    min-width: 99vw;
+    min-height: 100vh;
+    background-color: #303030;
+}
+
+.container {
+    padding-top: 5%;
+}

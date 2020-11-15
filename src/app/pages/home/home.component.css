@@ -1,0 +1,47 @@
+
+
+:host {
+    background-color:  #303030;
+    color: #ff9902;
+    display: block;
+    min-height: 99vh;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.admin-page-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.nav-columns {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-container {
+    max-width: fit-content;
+}
+
+
+
+.icon {
+    font-size: 8em;
+    justify-content: center;
+
+    position: relative;
+    top: 15%;
+    right: 15%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 5%;
+}

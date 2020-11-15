@@ -1,0 +1,17 @@
+<div class="accounts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <button (click)="firstAccount()">First account</button>
+      </div>
+      <div class="col-md-4">
+        {{account$ | async}}
+        <button (click)="secondAccount()">second account</button>
+      </div>
+      <div class="col-md-4">
+        One of three columns
+      </div>
+    </div>
+  </div>
+
+</div>

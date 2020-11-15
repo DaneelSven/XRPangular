@@ -1,0 +1,58 @@
+.action-card-icon {
+    max-width: 10vh;
+}
+
+.action-card  {
+    margin: 10px;
+    padding: 30px;
+    width: 30vh;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:  #303030;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 8px 16px;
+    transition: all .2s ease-in-out;
+    outline: none;
+
+    border: 1px solid rgba(black, 0.1);
+}
+.media-center {
+    justify-self: center;
+    align-self: center;
+}
+
+.action-card:hover {
+    box-shadow: #ff9902 0px 13px 30px;
+    transform: translate3d(0px, -1px, 0px);
+    cursor: pointer;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+}
+
+.text-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.action-card-icon {
+    color: white;
+}
+
+p {
+    color: #ff9902;
+
+}
+
+#card {
+    color: white;
+}
+
+.action-card.clickable:hover {
+    cursor: pointer;
+}
