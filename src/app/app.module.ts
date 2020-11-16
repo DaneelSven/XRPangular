@@ -12,7 +12,8 @@ import { ActionCardComponent } from './components/action-card/action-card.compon
 import { StoreModule} from '@ngrx/store'
 import { simpleReducer } from './simple.reducer';
 import { HttpClientModule } from '@angular/common/http';
-
+import {StoreDevtoolsModule} from '@ngrx/store-devtools'
+import { reducer } from './reducers/validator.reducer';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    StoreModule.forRoot({ message: simpleReducer}),
+    StoreModule.forRoot({ 
+      message: simpleReducer,
+      validators: reducer
+    }),
+    StoreDevtoolsModule.instrument({
+      maxAge: 10
+    }),
     HttpClientModule
   ],
   providers: [],

@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { XrpTransactionService } from 'src/app/services/xrp-transaction.service';
 
 @Component({
   selector: 'app-xrp-transactions',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class XrpTransactionsComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private xrpTransactionService: XrpTransactionService) { }
 
   ngOnInit(): void {
+    this.xrpTransactionService.getNetworkFees().subscribe(res => {
+      
+    })
   }
 
 }

@@ -1,0 +1,15 @@
+:host {
+    color: #ff9902;
+    background-color: #303030;
+    display: block;
+    min-height: 100vh;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+.children {
+    display: flex;
+}

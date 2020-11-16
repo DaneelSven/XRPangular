@@ -1,2 +1,39 @@
 <button (click)="getUniqueNodeList()">unique node list</button>>
 <button (click)="getRippleValidators()">ripple validators</button>>
+
+<div class="parent">
+
+  <div class="" *ngFor="let val of AllValidators">
+
+    <div class="card ">
+      <p>
+        Domain name: {{val.domain}}
+        visible: {{val.visible}}
+      </p>
+      <div *ngIf="val.visible">
+        <p>
+          Domain name: {{val.domain}}
+          Chain: {{val.chain}}
+          UNL: {{val.unl}}
+          agreement: {{val.agreement_1h.total}}
+        </p>
+      </div>
+      <button (click)="changeView(val)">show {{val.visible ? 'this': 'else'}}</button>
+
+    </div>
+
+
+  </div>
+
+  <div>
+    <p>
+      hello
+    </p>
+  </div>
+
+  <div>
+    <p>
+      2hello
+    </p>
+  </div>
+</div>
